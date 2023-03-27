@@ -150,7 +150,7 @@ namespace TrabajoPractico1
             this.lbNombreIntegranteA.Location = new System.Drawing.Point(5, 5);
             this.lbNombreIntegranteA.Margin = new System.Windows.Forms.Padding(5);
             this.lbNombreIntegranteA.Name = "lbNombreIntegranteA";
-            this.lbNombreIntegranteA.Size = new System.Drawing.Size(277, 16);
+            this.lbNombreIntegranteA.Size = new System.Drawing.Size(281, 16);
             this.lbNombreIntegranteA.TabIndex = 0;
             this.lbNombreIntegranteA.Text = "Jean Pierre Esquen";
             this.lbNombreIntegranteA.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -159,10 +159,10 @@ namespace TrabajoPractico1
             // 
             this.lbLegajoIntegranteA.AutoSize = true;
             this.lbLegajoIntegranteA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbLegajoIntegranteA.Location = new System.Drawing.Point(292, 5);
+            this.lbLegajoIntegranteA.Location = new System.Drawing.Point(296, 5);
             this.lbLegajoIntegranteA.Margin = new System.Windows.Forms.Padding(5);
             this.lbLegajoIntegranteA.Name = "lbLegajoIntegranteA";
-            this.lbLegajoIntegranteA.Size = new System.Drawing.Size(41, 16);
+            this.lbLegajoIntegranteA.Size = new System.Drawing.Size(37, 16);
             this.lbLegajoIntegranteA.TabIndex = 1;
             this.lbLegajoIntegranteA.Text = "25479";
             this.lbLegajoIntegranteA.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -174,7 +174,7 @@ namespace TrabajoPractico1
             this.lbNombreIntegranteB.Location = new System.Drawing.Point(5, 31);
             this.lbNombreIntegranteB.Margin = new System.Windows.Forms.Padding(5);
             this.lbNombreIntegranteB.Name = "lbNombreIntegranteB";
-            this.lbNombreIntegranteB.Size = new System.Drawing.Size(277, 16);
+            this.lbNombreIntegranteB.Size = new System.Drawing.Size(281, 16);
             this.lbNombreIntegranteB.TabIndex = 2;
             this.lbNombreIntegranteB.Text = "Javier Torales";
             this.lbNombreIntegranteB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -183,10 +183,10 @@ namespace TrabajoPractico1
             // 
             this.lbLegajoIntegranteB.AutoSize = true;
             this.lbLegajoIntegranteB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbLegajoIntegranteB.Location = new System.Drawing.Point(292, 31);
+            this.lbLegajoIntegranteB.Location = new System.Drawing.Point(296, 31);
             this.lbLegajoIntegranteB.Margin = new System.Windows.Forms.Padding(5);
             this.lbLegajoIntegranteB.Name = "lbLegajoIntegranteB";
-            this.lbLegajoIntegranteB.Size = new System.Drawing.Size(41, 16);
+            this.lbLegajoIntegranteB.Size = new System.Drawing.Size(37, 16);
             this.lbLegajoIntegranteB.TabIndex = 3;
             this.lbLegajoIntegranteB.Text = "27038";
             this.lbLegajoIntegranteB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -198,7 +198,7 @@ namespace TrabajoPractico1
             this.lbNombreIntegranteC.Location = new System.Drawing.Point(5, 57);
             this.lbNombreIntegranteC.Margin = new System.Windows.Forms.Padding(5);
             this.lbNombreIntegranteC.Name = "lbNombreIntegranteC";
-            this.lbNombreIntegranteC.Size = new System.Drawing.Size(277, 16);
+            this.lbNombreIntegranteC.Size = new System.Drawing.Size(281, 16);
             this.lbNombreIntegranteC.TabIndex = 4;
             this.lbNombreIntegranteC.Text = "María Olivia Hanczyc";
             this.lbNombreIntegranteC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -207,10 +207,10 @@ namespace TrabajoPractico1
             // 
             this.lbLegajoIntegranteC.AutoSize = true;
             this.lbLegajoIntegranteC.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbLegajoIntegranteC.Location = new System.Drawing.Point(292, 57);
+            this.lbLegajoIntegranteC.Location = new System.Drawing.Point(296, 57);
             this.lbLegajoIntegranteC.Margin = new System.Windows.Forms.Padding(5);
             this.lbLegajoIntegranteC.Name = "lbLegajoIntegranteC";
-            this.lbLegajoIntegranteC.Size = new System.Drawing.Size(41, 16);
+            this.lbLegajoIntegranteC.Size = new System.Drawing.Size(37, 16);
             this.lbLegajoIntegranteC.TabIndex = 5;
             this.lbLegajoIntegranteC.Text = "24987";
             this.lbLegajoIntegranteC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -222,7 +222,7 @@ namespace TrabajoPractico1
             this.lbNombreIntegranteD.Location = new System.Drawing.Point(5, 83);
             this.lbNombreIntegranteD.Margin = new System.Windows.Forms.Padding(5);
             this.lbNombreIntegranteD.Name = "lbNombreIntegranteD";
-            this.lbNombreIntegranteD.Size = new System.Drawing.Size(277, 16);
+            this.lbNombreIntegranteD.Size = new System.Drawing.Size(281, 16);
             this.lbNombreIntegranteD.TabIndex = 6;
             this.lbNombreIntegranteD.Text = "Máximo Tomás Canedo";
             this.lbNombreIntegranteD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -231,10 +231,10 @@ namespace TrabajoPractico1
             // 
             this.lbLegajoIntegranteD.AutoSize = true;
             this.lbLegajoIntegranteD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbLegajoIntegranteD.Location = new System.Drawing.Point(292, 83);
+            this.lbLegajoIntegranteD.Location = new System.Drawing.Point(296, 83);
             this.lbLegajoIntegranteD.Margin = new System.Windows.Forms.Padding(5);
             this.lbLegajoIntegranteD.Name = "lbLegajoIntegranteD";
-            this.lbLegajoIntegranteD.Size = new System.Drawing.Size(41, 16);
+            this.lbLegajoIntegranteD.Size = new System.Drawing.Size(37, 16);
             this.lbLegajoIntegranteD.TabIndex = 7;
             this.lbLegajoIntegranteD.Text = "25839";
             this.lbLegajoIntegranteD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -246,7 +246,7 @@ namespace TrabajoPractico1
             this.lbNombreIntegranteE.Location = new System.Drawing.Point(5, 109);
             this.lbNombreIntegranteE.Margin = new System.Windows.Forms.Padding(5);
             this.lbNombreIntegranteE.Name = "lbNombreIntegranteE";
-            this.lbNombreIntegranteE.Size = new System.Drawing.Size(277, 20);
+            this.lbNombreIntegranteE.Size = new System.Drawing.Size(281, 20);
             this.lbNombreIntegranteE.TabIndex = 8;
             this.lbNombreIntegranteE.Text = "Ezequiel Alejandro Martínez";
             this.lbNombreIntegranteE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -255,12 +255,12 @@ namespace TrabajoPractico1
             // 
             this.lbLegajoIntegranteE.AutoSize = true;
             this.lbLegajoIntegranteE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbLegajoIntegranteE.Location = new System.Drawing.Point(292, 109);
+            this.lbLegajoIntegranteE.Location = new System.Drawing.Point(296, 109);
             this.lbLegajoIntegranteE.Margin = new System.Windows.Forms.Padding(5);
             this.lbLegajoIntegranteE.Name = "lbLegajoIntegranteE";
-            this.lbLegajoIntegranteE.Size = new System.Drawing.Size(41, 20);
+            this.lbLegajoIntegranteE.Size = new System.Drawing.Size(37, 20);
             this.lbLegajoIntegranteE.TabIndex = 9;
-            this.lbLegajoIntegranteE.Text = "label10";
+            this.lbLegajoIntegranteE.Text = "26951";
             this.lbLegajoIntegranteE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // FormularioPrincipal
