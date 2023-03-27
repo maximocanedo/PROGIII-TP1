@@ -16,5 +16,24 @@ namespace TrabajoPractico1
         {
             InitializeComponent();
         }
+
+        private void btnPrimerEjercicio_Click(object sender, EventArgs e)
+        {
+            Ejercicio1 ejercicio1ventana = new Ejercicio1();
+            ejercicio1ventana.ShowDialog();
+
+        }
+
+        private void btnSegundoEjercicio_Click(object sender, EventArgs e)
+        {
+            Ejercicio2 ejercicio2ventana = new Ejercicio2();
+            ejercicio2ventana.ShowDialog();
+        }
+
+        private void btnTercerEjercicio_Click(object sender, EventArgs e)
+        {
+            Ejercicio3 ejercicio3ventana = new Ejercicio3();
+            ejercicio3ventana.ShowDialog();
+        }
     }
 }

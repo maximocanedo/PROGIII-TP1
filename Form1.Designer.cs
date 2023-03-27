@@ -79,6 +79,7 @@ namespace TrabajoPractico1
             this.btnPrimerEjercicio.TabIndex = 0;
             this.btnPrimerEjercicio.Text = "Ejercicio 1";
             this.btnPrimerEjercicio.UseVisualStyleBackColor = true;
+            this.btnPrimerEjercicio.Click += new System.EventHandler(this.btnPrimerEjercicio_Click);
             // 
             // btnSegundoEjercicio
             // 
@@ -89,6 +90,7 @@ namespace TrabajoPractico1
             this.btnSegundoEjercicio.TabIndex = 1;
             this.btnSegundoEjercicio.Text = "Ejercicio 2";
             this.btnSegundoEjercicio.UseVisualStyleBackColor = true;
+            this.btnSegundoEjercicio.Click += new System.EventHandler(this.btnSegundoEjercicio_Click);
             // 
             // btnTercerEjercicio
             // 
@@ -99,6 +101,7 @@ namespace TrabajoPractico1
             this.btnTercerEjercicio.TabIndex = 2;
             this.btnTercerEjercicio.Text = "Ejercicio 3";
             this.btnTercerEjercicio.UseVisualStyleBackColor = true;
+            this.btnTercerEjercicio.Click += new System.EventHandler(this.btnTercerEjercicio_Click);
             // 
             // gbIntegrantes
             // 
