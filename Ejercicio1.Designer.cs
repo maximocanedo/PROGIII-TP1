@@ -30,97 +30,102 @@ namespace TrabajoPractico1
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ejercicio1));
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnMoverTodos = new System.Windows.Forms.Button();
+            this.btnMover = new System.Windows.Forms.Button();
+            this.lbNombres2 = new System.Windows.Forms.ListBox();
+            this.lbNombres1 = new System.Windows.Forms.ListBox();
+            this.tbNombre = new System.Windows.Forms.TextBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button3
+            // btnMoverTodos
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(298, 303);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(57, 52);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "<<";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            this.btnMoverTodos.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMoverTodos.Location = new System.Drawing.Point(210, 250);
+            this.btnMoverTodos.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMoverTodos.Name = "btnMoverTodos";
+            this.btnMoverTodos.Size = new System.Drawing.Size(43, 42);
+            this.btnMoverTodos.TabIndex = 13;
+            this.btnMoverTodos.Text = ">>";
+            this.btnMoverTodos.UseVisualStyleBackColor = true;
+            this.btnMoverTodos.Click += new System.EventHandler(this.button3_Click_1);
             // 
-            // button2
+            // btnMover
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(298, 225);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(57, 52);
-            this.button2.TabIndex = 12;
-            this.button2.Text = ">";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.btnMover.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMover.Location = new System.Drawing.Point(210, 187);
+            this.btnMover.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMover.Name = "btnMover";
+            this.btnMover.Size = new System.Drawing.Size(43, 43);
+            this.btnMover.TabIndex = 12;
+            this.btnMover.Text = ">";
+            this.btnMover.UseVisualStyleBackColor = true;
+            this.btnMover.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // listBox2
+            // lbNombres2
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(372, 184);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(179, 260);
-            this.listBox2.TabIndex = 11;
+            this.lbNombres2.FormattingEnabled = true;
+            this.lbNombres2.Location = new System.Drawing.Point(291, 150);
+            this.lbNombres2.Margin = new System.Windows.Forms.Padding(2);
+            this.lbNombres2.Name = "lbNombres2";
+            this.lbNombres2.Size = new System.Drawing.Size(135, 212);
+            this.lbNombres2.TabIndex = 11;
+            this.lbNombres2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
-            // listBox1
+            // lbNombres1
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(99, 184);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listBox1.Size = new System.Drawing.Size(179, 260);
-            this.listBox1.TabIndex = 10;
+            this.lbNombres1.FormattingEnabled = true;
+            this.lbNombres1.Location = new System.Drawing.Point(35, 150);
+            this.lbNombres1.Margin = new System.Windows.Forms.Padding(2);
+            this.lbNombres1.Name = "lbNombres1";
+            this.lbNombres1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.lbNombres1.Size = new System.Drawing.Size(135, 212);
+            this.lbNombres1.TabIndex = 10;
             // 
-            // textBox1
+            // tbNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(228, 127);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(188, 22);
-            this.textBox1.TabIndex = 9;
+            this.tbNombre.Location = new System.Drawing.Point(163, 100);
+            this.tbNombre.Margin = new System.Windows.Forms.Padding(2);
+            this.tbNombre.Name = "tbNombre";
+            this.tbNombre.Size = new System.Drawing.Size(169, 20);
+            this.tbNombre.TabIndex = 9;
             // 
-            // button1
+            // btnAgregar
             // 
-            this.button1.Location = new System.Drawing.Point(473, 123);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 30);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnAgregar.Location = new System.Drawing.Point(348, 97);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(94, 24);
+            this.btnAgregar.TabIndex = 8;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(45, 127);
+            this.label1.Location = new System.Drawing.Point(11, 100);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 20);
+            this.label1.Size = new System.Drawing.Size(148, 17);
             this.label1.TabIndex = 7;
             this.label1.Text = "Ingrese su nombre:";
             // 
             // Ejercicio1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(645, 567);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(484, 461);
+            this.Controls.Add(this.btnMoverTodos);
+            this.Controls.Add(this.btnMover);
+            this.Controls.Add(this.lbNombres2);
+            this.Controls.Add(this.lbNombres1);
+            this.Controls.Add(this.tbNombre);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Ejercicio1";
             this.Text = "Primer Ejercicio · TP Nº 1 PROG III";
             this.ResumeLayout(false);
@@ -130,12 +135,12 @@ namespace TrabajoPractico1
 
         #endregion
 
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnMoverTodos;
+        private System.Windows.Forms.Button btnMover;
+        private System.Windows.Forms.ListBox lbNombres2;
+        private System.Windows.Forms.ListBox lbNombres1;
+        private System.Windows.Forms.TextBox tbNombre;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label1;
     }
 }
