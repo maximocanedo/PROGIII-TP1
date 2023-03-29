@@ -1,7 +1,7 @@
 # Trabajo Práctico N.° 1
 ## Programación III
 
-Este repositorio contiene el código correspondiente al Trabajo Práctico 1 de la materia Programación III de la UTN-FRGP.
+Este repositorio contiene el código correspondiente al Primer Trabajo Práctico de la materia Programación III de la UTN-FRGP.
 
 ## Integrantes
 
@@ -41,7 +41,7 @@ Para contribuir a este proyecto, por favor seguí estos pasos:
 
 1. Hacé un fork del repositorio.
 2. Creá una rama con la nueva funcionalidad: `git checkout -b nueva-funcionalidad`
-3. Realizá los cambios necesarios y confirmalos: `git commit -am 'Agregá la nueva funcionalidad'`
+3. Realizá los cambios necesarios y confirmalos: `git commit -m 'Agregá la nueva funcionalidad'`
 4. Subí los cambios a la rama: `git push origin nueva-funcionalidad`
 5. Abrí un pull request en el repositorio original.
 
