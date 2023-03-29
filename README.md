@@ -1,4 +1,5 @@
-# Programación III - Trabajo Práctico 1
+# Trabajo Práctico N.° 1
+## Programación III
 
 Este repositorio contiene el código correspondiente al Trabajo Práctico 1 de la materia Programación III de la UTN-FRGP.
 
