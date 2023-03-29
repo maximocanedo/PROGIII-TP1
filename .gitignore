@@ -1,2 +1,7 @@
 bin/
 obj/
+.vs/
+*.user
+*.suo
+*.prefs
+packages/

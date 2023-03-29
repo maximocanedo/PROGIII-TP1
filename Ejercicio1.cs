@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//PROBANDO GITHUB .. 
+
 namespace TrabajoPractico1
 {
     public partial class Ejercicio1 : Form
@@ -19,31 +21,43 @@ namespace TrabajoPractico1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string name = textBox1.Text;
-            textBox1.Text = "";
+            //string name = tbNombre.Text;
+            //tbNombre.Text = "";
             bool seRepite = false;
-            foreach (string nombreList in listBox1.Items)
+            foreach (string nombreList in lbNombres1.Items)
             {
-                if (nombreList.Trim().ToUpper() == name.Trim().ToUpper())
+                //if (nombreList.Trim().ToUpper() == name.Trim().ToUpper())
+                if (nombreList.Trim().ToUpper() == tbNombre.Text.Trim().ToUpper())
                 {
                     seRepite = true;
                 }
             }
-            if (seRepite == false)
+            if (tbNombre.Text.Trim() != "" && seRepite == false)
             {
-                listBox1.Items.Add(name);
+                lbNombres1.Items.Add(tbNombre.Text.Trim());
+                tbNombre.Text = "";
             }
             else
             {
-                MessageBox.Show("Nombre repetido", "error");
-            }
+                if (seRepite == false)
+                {
+                    MessageBox.Show("Debe ingresar un nombre");
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Nombre repetido", "error");
+                    
+                }
+                tbNombre.Text = "";
+            }  
         }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            if (listBox1.SelectedIndex >= 0)
+            if (lbNombres1.SelectedIndex >= 0)
             {
-                listBox2.Items.Add(listBox1.SelectedItem);
+                lbNombres2.Items.Add(lbNombres1.SelectedItem);
             }
             else
             {
@@ -53,18 +67,27 @@ namespace TrabajoPractico1
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            if (listBox1.SelectedIndex >= 0)
+            if (lbNombres1.Items.Count != 0)
             {
-                foreach (int item in listBox1.SelectedIndices)
+                lbNombres2.Items.Clear();
+
+                foreach (string item in lbNombres1.Items)
                 {
-                    listBox2.Items.Add(listBox1.Items[item]);
-                    listBox1.Items.RemoveAt(item);
+
+                    lbNombres2.Items.Add(item);
+
                 }
+                lbNombres1.Items.Clear();
             }
             else
             {
-                MessageBox.Show("No hay ningun nombre seleccionado");
+                MessageBox.Show("La lista izquierda se encuentra vacia");
             }
+        }
+
+        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
