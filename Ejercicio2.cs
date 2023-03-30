@@ -52,6 +52,7 @@ namespace TrabajoPractico1
         {
             bool nombreOK = verificarNombre();
             bool apellidoOK = verificarApellido();
+            
 
             if(!nombreOK || !apellidoOK)
             {
@@ -66,14 +67,28 @@ namespace TrabajoPractico1
                 } else
                 {
                     // No existen el nombre y apellido, así que procedemos a agregarlos a la lista.
-                    lbNombres.Items.Add(this.tbNombre.Text + " " + this.tbApellido.Text);
+                    lbNombres.Items.Add(this.tbNombre.Text.Trim() + " " + this.tbApellido.Text.Trim());
                 }
             }
+            tbNombre.Text = "";
+            tbApellido.Text = "";
         }
 
         private void lbNombres_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+            if (lbNombres.SelectedItems.Count != 0)
+            {
+                lbNombres.Items.Remove(lbNombres.SelectedItem);
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un nombre");
+            }
         }
     }
 }
