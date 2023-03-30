@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//test
 namespace TrabajoPractico1
 {
     public partial class Ejercicio2 : Form
@@ -68,6 +69,11 @@ namespace TrabajoPractico1
                     lbNombres.Items.Add(this.tbNombre.Text + " " + this.tbApellido.Text);
                 }
             }
+        }
+
+        private void lbNombres_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
