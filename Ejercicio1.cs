@@ -24,14 +24,24 @@ namespace TrabajoPractico1
             //string name = tbNombre.Text;
             //tbNombre.Text = "";
             bool seRepite = false;
-            foreach (string nombreList in lbNombres1.Items)
+            foreach (string nombreList1 in lbNombres1.Items)
             {
                 //if (nombreList.Trim().ToUpper() == name.Trim().ToUpper())
-                if (nombreList.Trim().ToUpper() == tbNombre.Text.Trim().ToUpper())
+                if (nombreList1.Trim().ToUpper() == tbNombre.Text.Trim().ToUpper())
                 {
                     seRepite = true;
                 }
             }
+
+            foreach (string nombreList2 in lbNombres2.Items)
+            {
+                //if (nombreList.Trim().ToUpper() == name.Trim().ToUpper())
+                if (nombreList2.Trim().ToUpper() == tbNombre.Text.Trim().ToUpper())
+                {
+                    seRepite = true;
+                }
+            }
+
             if (tbNombre.Text.Trim() != "" && seRepite == false)
             {
                 lbNombres1.Items.Add(tbNombre.Text.Trim());
@@ -69,7 +79,7 @@ namespace TrabajoPractico1
         {
             if (lbNombres1.Items.Count != 0)
             {
-                lbNombres2.Items.Clear();
+                ///lbNombres2.Items.Clear();
 
                 foreach (string item in lbNombres1.Items)
                 {
@@ -87,6 +97,8 @@ namespace TrabajoPractico1
 
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+         
 
         }
     }
