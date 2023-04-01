@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-//test
+
 namespace TrabajoPractico1
 {
     public partial class Ejercicio2 : Form
@@ -22,16 +22,35 @@ namespace TrabajoPractico1
             this.lbNombres.Items.Add("Carmen Itulaín");
             //*/
         }
-        private bool verificarNombre()
-        {
-            return (this.tbNombre.Text.Trim() != "");
-        }
-        private bool verificarApellido()
-        {
-            return (this.tbApellido.Text.Trim() != "");
-        }
+        private bool estaVacio(string str) 
+        { return str.Trim() != ""; }
 
+        private string normalizarString(string str)
+        {
+            string paso1 = new string(str
+                .Normalize(NormalizationForm.FormD)
+                .Where(c => char.GetUnicodeCategory(c) != System.Globalization.UnicodeCategory.NonSpacingMark)
+                .ToArray()); // Quita acentos.
+            string paso2 = paso1.ToUpper(); // Pasar todo a mayúsculas
+            string paso3 = paso2.Trim(); // Cortar espacios
+            string paso4 = paso3.Replace(" ", ""); // Cortar espacios, definitivamente
+            return paso4;
+        }
         private bool existeEnLaLista(string nombre, string apellido)
+        {
+            string nombreNormalizado = normalizarString(nombre);
+            string apellidoNormalizado = normalizarString(apellido);
+            string aux = nombreNormalizado + apellidoNormalizado;
+            foreach (string nombreList1 in this.lbNombres.Items)
+            {
+                if (normalizarString(nombreList1) == aux)
+                {
+                    return true;
+                }
+            }         
+            return false;
+        }
+        /*private bool existeEnLaLista(string nombre, string apellido)
         {
             bool existe = false;
             for (int i = 0; i < lbNombres.Items.Count; i++)
@@ -47,11 +66,11 @@ namespace TrabajoPractico1
                 }
             }
             return existe;
-        }
+        }*/
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            bool nombreOK = verificarNombre();
-            bool apellidoOK = verificarApellido();
+            bool nombreOK = estaVacio(tbNombre.Text);
+            bool apellidoOK = estaVacio(tbApellido.Text);
             
 
             if(!nombreOK || !apellidoOK)

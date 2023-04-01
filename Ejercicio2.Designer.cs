@@ -69,7 +69,7 @@ namespace TrabajoPractico1
             this.gbIngresoDatos.Controls.Add(this.tableLayoutPanel3);
             this.gbIngresoDatos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gbIngresoDatos.Location = new System.Drawing.Point(8, 8);
-            this.gbIngresoDatos.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.gbIngresoDatos.Margin = new System.Windows.Forms.Padding(8);
             this.gbIngresoDatos.Name = "gbIngresoDatos";
             this.gbIngresoDatos.Size = new System.Drawing.Size(176, 245);
             this.gbIngresoDatos.TabIndex = 0;
@@ -152,7 +152,7 @@ namespace TrabajoPractico1
             this.gbElementos.Controls.Add(this.tableLayoutPanel2);
             this.gbElementos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gbElementos.Location = new System.Drawing.Point(200, 8);
-            this.gbElementos.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.gbElementos.Margin = new System.Windows.Forms.Padding(8);
             this.gbElementos.Name = "gbElementos";
             this.gbElementos.Size = new System.Drawing.Size(176, 245);
             this.gbElementos.TabIndex = 1;
