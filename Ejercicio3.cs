@@ -48,13 +48,12 @@ namespace TrabajoPractico1
             // los items que tienen check. 
             // Y luego escribir para que figuren por pantalla.
             lblOficio.Text = "";
+            tbListaOficios.Text = "";
             lblOficio.Text = "Oficio:";
-            for (int I = 1; I <= clbOficios.Items.Count; I++)
+
+            foreach (Object item in clbOficios.CheckedItems)
             {
-                if (clbOficios.GetItemChecked(I))
-                {
-                    // no sé cómo hacer para mostrar por pantalla el nombre o el texto del item seleccionado.
-                }
+                tbListaOficios.Text += item.ToString()+ "\r\n";
             }
             // HASTA ACÁ.
         }
