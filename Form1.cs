@@ -15,6 +15,8 @@ namespace TrabajoPractico1
         public FormularioPrincipal()
         {
             InitializeComponent();
+            Ejercicio1 ejercicio1ventana = new Ejercicio1();
+            ejercicio1ventana.ShowDialog();
         }
 
         private void btnPrimerEjercicio_Click(object sender, EventArgs e)

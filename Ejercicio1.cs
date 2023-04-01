@@ -18,88 +18,91 @@ namespace TrabajoPractico1
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private int getIndexOfLB1(string nombre)
         {
-            //string name = tbNombre.Text;
-            //tbNombre.Text = "";
-            bool seRepite = false;
-            foreach (string nombreList1 in lbNombres1.Items)
+            // Esta funcion recibe un string y lo busca en en LB1. De existir devuelve el Index, si no un -1.
+            for (int i = 0; i < this.listBox1.Items.Count; i++)
             {
-                //if (nombreList.Trim().ToUpper() == name.Trim().ToUpper())
-                if (nombreList1.Trim().ToUpper() == tbNombre.Text.Trim().ToUpper())
+                string item = this.listBox1.Items[i].ToString();
+                // Comparar
+                if (item.Trim().ToUpper() == nombre.Trim().ToUpper())
                 {
-                    seRepite = true;
+                    return i;
                 }
             }
-
-            foreach (string nombreList2 in lbNombres2.Items)
+            return -1;
+        }
+        private int getIndexOfLB2(string nombre)
+        {
+            // Esta funcion recibe un string y lo busca en en LB2. De existir devuelve el Index, si no un -1.
+            for (int i = 0; i < this.listBox2.Items.Count; i++)
             {
-                //if (nombreList.Trim().ToUpper() == name.Trim().ToUpper())
-                if (nombreList2.Trim().ToUpper() == tbNombre.Text.Trim().ToUpper())
+                string item = this.listBox2.Items[i].ToString();
+                // Comparar
+                if (item.Trim().ToUpper() == nombre.Trim().ToUpper())
                 {
-                    seRepite = true;
+                    return i;
                 }
             }
-
-            if (tbNombre.Text.Trim() != "" && seRepite == false)
+            return -1;
+        }
+        private bool verificarNombre(string nombre)
+        {
+            // Verificamos que no esté en blanco
+            if(nombre.Trim() != "")
             {
-                lbNombres1.Items.Add(tbNombre.Text.Trim());
-                tbNombre.Text = "";
-            }
-            else
-            {
-                if (seRepite == false)
+                // No está en blanco. Ahora tenemos que verificar que no exista en el lb1
+                if(getIndexOfLB1(nombre) == -1 && getIndexOfLB2(nombre) == -1)
                 {
-                    MessageBox.Show("Debe ingresar un nombre");
-                    
+                    // No hay registro igual en la lista y no está en blanco. Es nombre aceptable.
+                    return true;
                 }
                 else
-                {
-                    MessageBox.Show("Nombre repetido", "error");
-                    
+                { // No está en blanco, pero hay un ítem en la lista idéntico.
+                    MessageBox.Show("El nombre ingresado ya existe. Intente con otro. ", "Error");
+                    return false;
                 }
-                tbNombre.Text = "";
-            }  
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            if (lbNombres1.SelectedIndex >= 0)
-            {
-                lbNombres2.Items.Add(lbNombres1.SelectedItem);
-            }
-            else
-            {
-                MessageBox.Show("No hay ningun nombre seleccionado");
+            } else
+            { // El nombre está en blanco. 
+                MessageBox.Show("Debe ingresar un nombre antes de continuar. ", "Advertencia");
+                return false;
             }
         }
-
-        private void button3_Click_1(object sender, EventArgs e)
+        private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (lbNombres1.Items.Count != 0)
+            string nombreDadoPorElUsuario = this.tbNombre.Text;
+            bool esAceptable = verificarNombre(nombreDadoPorElUsuario);
+            if(esAceptable)
             {
-                ///lbNombres2.Items.Clear();
-
-                foreach (string item in lbNombres1.Items)
-                {
-
-                    lbNombres2.Items.Add(item);
-
-                }
-                lbNombres1.Items.Clear();
+                listBox1.Items.Add(nombreDadoPorElUsuario);
             }
-            else
+
+
+        }
+
+        private void btnMover_Click(object sender, EventArgs e)
+        {
+            // Verificamos primero que el usuario haya seleccionado un ítem del lb1.
+            int selectedIndex = listBox1.SelectedIndex;
+            if(selectedIndex != -1)
             {
-                MessageBox.Show("La lista izquierda se encuentra vacia");
+                // El usuario sí seleccionó un ítem. Procedemos a moverlo.
+                string selectedItemContent = listBox1.SelectedItem.ToString();
+                listBox2.Items.Add(selectedItemContent);
+                listBox1.Items.RemoveAt(selectedIndex);
+            } else
+            {
+                MessageBox.Show("Debe seleccionar un elemento de la lista.", "Error");
             }
         }
 
-        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnMoverTodos_Click(object sender, EventArgs e)
         {
-
-         
-
+            for (int i = 0; i < listBox1.Items.Count; i++)
+            {
+                listBox2.Items.Add(listBox1.Items[i].ToString());
+            }
+            listBox1.Items.Clear();
         }
     }
 }
