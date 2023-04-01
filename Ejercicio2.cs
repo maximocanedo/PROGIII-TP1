@@ -90,5 +90,9 @@ namespace TrabajoPractico1
                 MessageBox.Show("Debe seleccionar un nombre.");
             }
         }
+
+        private void tbNombre_TextChanged(object sender, EventArgs e) {
+
+        }
     }
 }

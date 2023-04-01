@@ -21,30 +21,30 @@ namespace TrabajoPractico1 {
             string paso4 = paso3.Replace(" ", ""); // Cortar espacios, definitivamente
             return paso4;
         }
+        private bool NombreEstaRepetido(string nombre) {
+            string nombreNormalizado = normalizarString(nombre);
+            foreach (string nombreList1 in this.lbNombres1.Items) {
+                if (normalizarString(nombreList1) == nombreNormalizado) {
+                    return true;
+                }
+            }
+            foreach (string nombreList2 in this.lbNombres2.Items) {
+                if (normalizarString(nombreList2) == nombreNormalizado) {
+                    return true;
+                }
+            }
+            return false;
+        }
 
         private void button1_Click(object sender, EventArgs e) {
             if (tbNombre.Text.Trim() == "") {
                 MessageBox.Show("Debe ingresar un nombre");
+                return;
             }
-            else {
-                bool seRepite = false;
-                foreach (string nombreList1 in lbNombres1.Items) {
-                    if (normalizarString(nombreList1) == normalizarString(tbNombre.Text)) {
-                        seRepite = true;
-                    }
-                }
-                foreach (string nombreList2 in lbNombres2.Items) {
-                    if (normalizarString(nombreList2) == normalizarString(tbNombre.Text)) {
-                        seRepite = true;
-                    }
-                }
-                if (seRepite == false) {
-                    lbNombres1.Items.Add(tbNombre.Text.Trim());
-                    tbNombre.Text = "";
-                }
-                else {
-                    MessageBox.Show("Nombre repetido.", "Error");
-                }
+            if (NombreEstaRepetido(tbNombre.Text.Trim())) {
+                MessageBox.Show("Nombre repetido.", "Error");
+            } else {
+                lbNombres1.Items.Add(tbNombre.Text.Trim());
                 tbNombre.Text = "";
             }
         }
