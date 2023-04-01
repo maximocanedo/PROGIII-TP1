@@ -49,13 +49,13 @@ namespace TrabajoPractico1
             // Y luego escribir para que figuren por pantalla.
             lblOficio.Text = "";
             lblOficio.Text = "Oficio:";
-            for (int I = 1; I <= clbOficios.Items.Count; I++)
+            /*for (int I = 1; I <= clbOficios.Items.Count; I++)
             {
                 if (clbOficios.GetItemChecked(I))
                 {
                     // no sé cómo hacer para mostrar por pantalla el nombre o el texto del item seleccionado.
                 }
-            }
+            }*/
             // HASTA ACÁ.
         }
     }
