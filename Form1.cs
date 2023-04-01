@@ -15,7 +15,7 @@ namespace TrabajoPractico1
         public FormularioPrincipal()
         {
             InitializeComponent();
-            Ejercicio3 ejercicioventana = new Ejercicio3();
+            Ejercicio2 ejercicioventana = new Ejercicio2();
             ejercicioventana.ShowDialog();
         }
 

@@ -30,18 +30,45 @@ namespace TrabajoPractico1
         {
             return (this.tbApellido.Text.Trim() != "");
         }
+        private string prepararStringParaComparar(string str)
+        {
+            string paso1 = new string(str
+                .Normalize(NormalizationForm.FormD)
+                .Where(c => char.GetUnicodeCategory(c) != System.Globalization.UnicodeCategory.NonSpacingMark)
+                .ToArray()); // Quita acentos.
+            string paso2 = paso1.ToUpper(); // Pasar todo a mayúsculas
+            string paso3 = paso2.Trim(); // Cortar espacios
+            string paso4 = paso3.Replace(" ", ""); // Cortar espacios, definitivamente
+            return paso4;
+        }
+        private bool compararItems(string item1, string item2)
+        {
+            string a = prepararStringParaComparar(item1);
+            string b = prepararStringParaComparar(item2);
+            /* MessageBox.Show(
+                "Comparando: \r\n"+a+"\r\n"+b
+                ); // */
+            return a == b; 
+        }
+        private void limpiarCampos(bool focusAfter = false)
+        {
+            tbNombre.Text = "";
+            tbApellido.Text = "";
+            if(focusAfter)
+            {
+                tbNombre.Focus();
+            }
+        }
 
         private bool existeEnLaLista(string nombre, string apellido)
         {
             bool existe = false;
             for (int i = 0; i < lbNombres.Items.Count; i++)
             {
-                string aux = lbNombres.Items[i].ToString();
-                string n = nombre.Trim().ToUpper() + " " + apellido.Trim().ToUpper();
-                string x = aux.Trim().ToUpper();
-                // MessageBox.Show("n=" + n + "\r\nx=" + x);
-                // No me fue posible hacer .Trim() a 'aux'. Me sale siempre con el espacio en medio, así que por eso le agregué un espacio entre 'nombre' y 'apellido' para poder comparar.
-                if (x.Trim().ToUpper() == n)
+                string original = lbNombres.Items[i].ToString();
+                string item = (string)original.Clone();
+                string completeName = nombre + " " + apellido;
+                if(compararItems(item, completeName))
                 {
                     existe = true;
                 }
@@ -57,6 +84,7 @@ namespace TrabajoPractico1
             if(!nombreOK || !apellidoOK)
             {
                 MessageBox.Show("¡El nombre y/o el apellido están en blanco!", "Atención");
+                limpiarCampos(true);
             }
             else
             {
@@ -64,6 +92,7 @@ namespace TrabajoPractico1
                 if(existeEnLaLista(this.tbNombre.Text, this.tbApellido.Text))
                 {
                     MessageBox.Show("El nombre y apellido ya existen en la lista.");
+                    limpiarCampos(true);
                 } else
                 {
                     // No existen el nombre y apellido, así que procedemos a agregarlos a la lista.
@@ -81,13 +110,13 @@ namespace TrabajoPractico1
 
         private void btnBorrar_Click(object sender, EventArgs e)
         {
-            if (lbNombres.SelectedItems.Count != 0)
+            bool elUsuarioSeleccionoAlgo = lbNombres.SelectedIndex != -1;
+            if(!elUsuarioSeleccionoAlgo)
             {
-                lbNombres.Items.Remove(lbNombres.SelectedItem);
-            }
-            else
+                MessageBox.Show("Seleccione primero el elemento que desea eliminar. ");
+            } else
             {
-                MessageBox.Show("Debe seleccionar un nombre");
+                lbNombres.Items.RemoveAt(lbNombres.SelectedIndex);
             }
         }
     }
