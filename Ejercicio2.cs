@@ -99,8 +99,7 @@ namespace TrabajoPractico1
                     lbNombres.Items.Add(this.tbNombre.Text.Trim() + " " + this.tbApellido.Text.Trim());
                 }
             }
-            tbNombre.Text = "";
-            tbApellido.Text = "";
+            limpiarCampos();
         }
 
         private void lbNombres_SelectedIndexChanged(object sender, EventArgs e)

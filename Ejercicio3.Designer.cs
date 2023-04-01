@@ -40,7 +40,7 @@ namespace TrabajoPractico1
             this.rbMarried = new System.Windows.Forms.RadioButton();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.btnMostrarSeleccion = new System.Windows.Forms.Button();
-            this.tbResultado = new System.Windows.Forms.TextBox();
+            this.lbResultado = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -54,14 +54,14 @@ namespace TrabajoPractico1
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.checkedListBox1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnMostrarSeleccion, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.tbResultado, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.lbResultado, 0, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(324, 431);
             this.tableLayoutPanel1.TabIndex = 0;
@@ -100,7 +100,6 @@ namespace TrabajoPractico1
             this.rbMaleSex.Name = "rbMaleSex";
             this.rbMaleSex.Size = new System.Drawing.Size(73, 17);
             this.rbMaleSex.TabIndex = 1;
-            this.rbMaleSex.TabStop = true;
             this.rbMaleSex.Text = "Masculino";
             this.rbMaleSex.UseVisualStyleBackColor = true;
             this.rbMaleSex.CheckedChanged += new System.EventHandler(this.rbMaleSex_CheckedChanged);
@@ -108,6 +107,7 @@ namespace TrabajoPractico1
             // rbFemaleSex
             // 
             this.rbFemaleSex.AutoSize = true;
+            this.rbFemaleSex.Checked = true;
             this.rbFemaleSex.Location = new System.Drawing.Point(34, 29);
             this.rbFemaleSex.Name = "rbFemaleSex";
             this.rbFemaleSex.Size = new System.Drawing.Size(71, 17);
@@ -136,7 +136,6 @@ namespace TrabajoPractico1
             this.rbSingle.Name = "rbSingle";
             this.rbSingle.Size = new System.Drawing.Size(69, 17);
             this.rbSingle.TabIndex = 1;
-            this.rbSingle.TabStop = true;
             this.rbSingle.Text = "Soltero/a";
             this.rbSingle.UseVisualStyleBackColor = true;
             this.rbSingle.CheckedChanged += new System.EventHandler(this.rbSingle_CheckedChanged);
@@ -144,6 +143,7 @@ namespace TrabajoPractico1
             // rbMarried
             // 
             this.rbMarried.AutoSize = true;
+            this.rbMarried.Checked = true;
             this.rbMarried.Location = new System.Drawing.Point(31, 29);
             this.rbMarried.Name = "rbMarried";
             this.rbMarried.Size = new System.Drawing.Size(72, 17);
@@ -171,7 +171,7 @@ namespace TrabajoPractico1
             // btnMostrarSeleccion
             // 
             this.btnMostrarSeleccion.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnMostrarSeleccion.Location = new System.Drawing.Point(113, 223);
+            this.btnMostrarSeleccion.Location = new System.Drawing.Point(113, 238);
             this.btnMostrarSeleccion.Name = "btnMostrarSeleccion";
             this.btnMostrarSeleccion.Size = new System.Drawing.Size(98, 23);
             this.btnMostrarSeleccion.TabIndex = 2;
@@ -179,14 +179,13 @@ namespace TrabajoPractico1
             this.btnMostrarSeleccion.UseVisualStyleBackColor = true;
             this.btnMostrarSeleccion.Click += new System.EventHandler(this.btnMostrarSeleccion_Click);
             // 
-            // tbResultado
+            // lbResultado
             // 
-            this.tbResultado.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tbResultado.Location = new System.Drawing.Point(49, 265);
-            this.tbResultado.Multiline = true;
-            this.tbResultado.Name = "tbResultado";
-            this.tbResultado.Size = new System.Drawing.Size(225, 150);
-            this.tbResultado.TabIndex = 3;
+            this.lbResultado.AutoSize = true;
+            this.lbResultado.Location = new System.Drawing.Point(3, 280);
+            this.lbResultado.Name = "lbResultado";
+            this.lbResultado.Size = new System.Drawing.Size(0, 13);
+            this.lbResultado.TabIndex = 3;
             // 
             // Ejercicio3
             // 
@@ -222,6 +221,6 @@ namespace TrabajoPractico1
         private System.Windows.Forms.RadioButton rbMarried;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Button btnMostrarSeleccion;
-        private System.Windows.Forms.TextBox tbResultado;
+        private System.Windows.Forms.Label lbResultado;
     }
 }

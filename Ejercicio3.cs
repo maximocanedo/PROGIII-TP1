@@ -46,21 +46,21 @@ namespace TrabajoPractico1
 
         private void btnMostrarSeleccion_Click(object sender, EventArgs e)
         {
-            tbResultado.Clear();
-            tbResultado.Text += "Usted ha seleccionado los siguientes elementos: \r\n";
-            tbResultado.Text += "Sexo: " + (sexo == 1 ? "Femenino" : "Masculino") + "\r\n";
-            tbResultado.Text += "Estado Civil: " + (
+            lbResultado.Text = "";
+            lbResultado.Text += "Usted ha seleccionado los siguientes elementos: \r\n";
+            lbResultado.Text += "Sexo: " + (sexo == 1 ? "Femenino" : "Masculino") + "\r\n";
+            lbResultado.Text += "Estado Civil: " + (
                     sexo == 1 ? (estadoCivil == 1 ? "Soltera" : "Casada") :
                     (estadoCivil == 1 ? "Soltero" : "Casado")
                 ) + "\r\n";
-            tbResultado.Text += "Oficio/s: \r\n";
+            lbResultado.Text += "Oficio/s: \r\n";
             foreach(var item in checkedListBox1.CheckedItems)
             {
-                tbResultado.Text += "  · " + item.ToString() + "\r\n";
+                lbResultado.Text += "  · " + item.ToString() + "\r\n";
             }
             if(checkedListBox1.CheckedItems.Count == 0)
             {
-                tbResultado.Text += "  (No se seleccionó ningún oficio)";
+                lbResultado.Text += "  (No se seleccionó ningún oficio)";
             }
         }
 
