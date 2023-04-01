@@ -30,172 +30,189 @@ namespace TrabajoPractico1
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ejercicio3));
-            this.button1 = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.btnMostrar = new System.Windows.Forms.Button();
+            this.rbFemenino = new System.Windows.Forms.RadioButton();
+            this.rbMasculino = new System.Windows.Forms.RadioButton();
+            this.rbSoltero = new System.Windows.Forms.RadioButton();
+            this.rbCasado = new System.Windows.Forms.RadioButton();
+            this.clbOficios = new System.Windows.Forms.CheckedListBox();
+            this.gbSexo = new System.Windows.Forms.GroupBox();
+            this.gbEstadoCivil = new System.Windows.Forms.GroupBox();
+            this.lblMuestra = new System.Windows.Forms.Label();
+            this.tbListaOficios = new System.Windows.Forms.TextBox();
+            this.lblSexo = new System.Windows.Forms.Label();
+            this.lblEstadoCivil = new System.Windows.Forms.Label();
+            this.lblOficio = new System.Windows.Forms.Label();
+            this.gbSexo.SuspendLayout();
+            this.gbEstadoCivil.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // btnMostrar
             // 
-            this.button1.Location = new System.Drawing.Point(201, 310);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(206, 42);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Mostrar lo que se selecciono";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnMostrar.Location = new System.Drawing.Point(225, 320);
+            this.btnMostrar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnMostrar.Name = "btnMostrar";
+            this.btnMostrar.Size = new System.Drawing.Size(232, 52);
+            this.btnMostrar.TabIndex = 0;
+            this.btnMostrar.Text = "Mostrar lo que se seleccionó";
+            this.btnMostrar.UseVisualStyleBackColor = true;
+            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
             // 
-            // radioButton1
+            // rbFemenino
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(25, 43);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(91, 21);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Femenino";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbFemenino.AutoSize = true;
+            this.rbFemenino.Checked = true;
+            this.rbFemenino.Location = new System.Drawing.Point(28, 27);
+            this.rbFemenino.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rbFemenino.Name = "rbFemenino";
+            this.rbFemenino.Size = new System.Drawing.Size(105, 24);
+            this.rbFemenino.TabIndex = 1;
+            this.rbFemenino.TabStop = true;
+            this.rbFemenino.Text = "Femenino";
+            this.rbFemenino.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbMasculino
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(25, 88);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(92, 21);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Masculino";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbMasculino.AutoSize = true;
+            this.rbMasculino.Location = new System.Drawing.Point(28, 72);
+            this.rbMasculino.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rbMasculino.Name = "rbMasculino";
+            this.rbMasculino.Size = new System.Drawing.Size(105, 24);
+            this.rbMasculino.TabIndex = 2;
+            this.rbMasculino.Text = "Masculino";
+            this.rbMasculino.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rbSoltero
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(31, 88);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(74, 21);
-            this.radioButton3.TabIndex = 4;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Soltero";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbSoltero.AutoSize = true;
+            this.rbSoltero.Location = new System.Drawing.Point(35, 72);
+            this.rbSoltero.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rbSoltero.Name = "rbSoltero";
+            this.rbSoltero.Size = new System.Drawing.Size(85, 24);
+            this.rbSoltero.TabIndex = 4;
+            this.rbSoltero.Text = "Soltero";
+            this.rbSoltero.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rbCasado
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(31, 43);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(77, 21);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Casado";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rbCasado.AutoSize = true;
+            this.rbCasado.Checked = true;
+            this.rbCasado.Location = new System.Drawing.Point(35, 27);
+            this.rbCasado.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rbCasado.Name = "rbCasado";
+            this.rbCasado.Size = new System.Drawing.Size(89, 24);
+            this.rbCasado.TabIndex = 3;
+            this.rbCasado.TabStop = true;
+            this.rbCasado.Text = "Casado";
+            this.rbCasado.UseVisualStyleBackColor = true;
             // 
-            // checkedListBox1
+            // clbOficios
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "Data entry",
-            "Operador de Pc",
+            this.clbOficios.CheckOnClick = true;
+            this.clbOficios.FormattingEnabled = true;
+            this.clbOficios.Items.AddRange(new object[] {
+            "Data Entry",
+            "Operador de PC",
             "Programador ",
-            "Reparador de Pc",
+            "Reparador de PC",
             "Tester"});
-            this.checkedListBox1.Location = new System.Drawing.Point(201, 183);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(206, 106);
-            this.checkedListBox1.TabIndex = 5;
+            this.clbOficios.Location = new System.Drawing.Point(226, 162);
+            this.clbOficios.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.clbOficios.Name = "clbOficios";
+            this.clbOficios.Size = new System.Drawing.Size(231, 119);
+            this.clbOficios.TabIndex = 5;
             // 
-            // groupBox1
+            // gbSexo
             // 
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Location = new System.Drawing.Point(12, 23);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(178, 156);
-            this.groupBox1.TabIndex = 6;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Sexo";
+            this.gbSexo.Controls.Add(this.rbFemenino);
+            this.gbSexo.Controls.Add(this.rbMasculino);
+            this.gbSexo.Location = new System.Drawing.Point(14, 29);
+            this.gbSexo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gbSexo.Name = "gbSexo";
+            this.gbSexo.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gbSexo.Size = new System.Drawing.Size(200, 117);
+            this.gbSexo.TabIndex = 6;
+            this.gbSexo.TabStop = false;
+            this.gbSexo.Text = "Sexo";
             // 
-            // groupBox2
+            // gbEstadoCivil
             // 
-            this.groupBox2.Controls.Add(this.radioButton4);
-            this.groupBox2.Controls.Add(this.radioButton3);
-            this.groupBox2.Location = new System.Drawing.Point(412, 23);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(178, 156);
-            this.groupBox2.TabIndex = 7;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Estado Civil";
+            this.gbEstadoCivil.Controls.Add(this.rbCasado);
+            this.gbEstadoCivil.Controls.Add(this.rbSoltero);
+            this.gbEstadoCivil.Location = new System.Drawing.Point(464, 29);
+            this.gbEstadoCivil.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gbEstadoCivil.Name = "gbEstadoCivil";
+            this.gbEstadoCivil.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gbEstadoCivil.Size = new System.Drawing.Size(200, 117);
+            this.gbEstadoCivil.TabIndex = 7;
+            this.gbEstadoCivil.TabStop = false;
+            this.gbEstadoCivil.Text = "Estado Civil";
             // 
-            // label1
+            // lblMuestra
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 376);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(532, 31);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Usted seleccionó los siguientes elementos:";
+            this.lblMuestra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMuestra.Location = new System.Drawing.Point(27, 417);
+            this.lblMuestra.Name = "lblMuestra";
+            this.lblMuestra.Size = new System.Drawing.Size(617, 37);
+            this.lblMuestra.TabIndex = 13;
             // 
-            // label2
+            // tbListaOficios
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 419);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 31);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Sexo: ";
+            this.tbListaOficios.BackColor = System.Drawing.SystemColors.Control;
+            this.tbListaOficios.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbListaOficios.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbListaOficios.Location = new System.Drawing.Point(54, 590);
+            this.tbListaOficios.Multiline = true;
+            this.tbListaOficios.Name = "tbListaOficios";
+            this.tbListaOficios.Size = new System.Drawing.Size(364, 200);
+            this.tbListaOficios.TabIndex = 14;
             // 
-            // label3
+            // lblSexo
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 450);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 31);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Civil: ";
+            this.lblSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSexo.Location = new System.Drawing.Point(27, 467);
+            this.lblSexo.Name = "lblSexo";
+            this.lblSexo.Size = new System.Drawing.Size(615, 40);
+            this.lblSexo.TabIndex = 15;
             // 
-            // label4
+            // lblEstadoCivil
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 481);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 31);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Oficio:";
+            this.lblEstadoCivil.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstadoCivil.Location = new System.Drawing.Point(27, 507);
+            this.lblEstadoCivil.Name = "lblEstadoCivil";
+            this.lblEstadoCivil.Size = new System.Drawing.Size(615, 40);
+            this.lblEstadoCivil.TabIndex = 16;
+            // 
+            // lblOficio
+            // 
+            this.lblOficio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOficio.Location = new System.Drawing.Point(29, 547);
+            this.lblOficio.Name = "lblOficio";
+            this.lblOficio.Size = new System.Drawing.Size(615, 40);
+            this.lblOficio.TabIndex = 17;
             // 
             // Ejercicio3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(602, 665);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.checkedListBox1);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(677, 831);
+            this.Controls.Add(this.lblOficio);
+            this.Controls.Add(this.lblEstadoCivil);
+            this.Controls.Add(this.lblSexo);
+            this.Controls.Add(this.tbListaOficios);
+            this.Controls.Add(this.lblMuestra);
+            this.Controls.Add(this.gbEstadoCivil);
+            this.Controls.Add(this.gbSexo);
+            this.Controls.Add(this.clbOficios);
+            this.Controls.Add(this.btnMostrar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Ejercicio3";
             this.Text = "Tercer Ejercicio · TP Nº 1 PROG III";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.gbSexo.ResumeLayout(false);
+            this.gbSexo.PerformLayout();
+            this.gbEstadoCivil.ResumeLayout(false);
+            this.gbEstadoCivil.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,17 +220,18 @@ namespace TrabajoPractico1
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnMostrar;
+        private System.Windows.Forms.RadioButton rbFemenino;
+        private System.Windows.Forms.RadioButton rbMasculino;
+        private System.Windows.Forms.RadioButton rbSoltero;
+        private System.Windows.Forms.RadioButton rbCasado;
+        private System.Windows.Forms.CheckedListBox clbOficios;
+        private System.Windows.Forms.GroupBox gbSexo;
+        private System.Windows.Forms.GroupBox gbEstadoCivil;
+        private System.Windows.Forms.Label lblMuestra;
+        private System.Windows.Forms.TextBox tbListaOficios;
+        private System.Windows.Forms.Label lblSexo;
+        private System.Windows.Forms.Label lblEstadoCivil;
+        private System.Windows.Forms.Label lblOficio;
     }
 }

@@ -58,22 +58,22 @@ namespace TrabajoPractico1
             this.tableLayoutPanel1.Controls.Add(this.gbElementos, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(512, 321);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(576, 401);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // gbIngresoDatos
             // 
             this.gbIngresoDatos.Controls.Add(this.tableLayoutPanel3);
             this.gbIngresoDatos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbIngresoDatos.Location = new System.Drawing.Point(11, 10);
-            this.gbIngresoDatos.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
+            this.gbIngresoDatos.Location = new System.Drawing.Point(12, 12);
+            this.gbIngresoDatos.Margin = new System.Windows.Forms.Padding(12);
             this.gbIngresoDatos.Name = "gbIngresoDatos";
-            this.gbIngresoDatos.Padding = new System.Windows.Forms.Padding(4);
-            this.gbIngresoDatos.Size = new System.Drawing.Size(234, 301);
+            this.gbIngresoDatos.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbIngresoDatos.Size = new System.Drawing.Size(264, 377);
             this.gbIngresoDatos.TabIndex = 0;
             this.gbIngresoDatos.TabStop = false;
             this.gbIngresoDatos.Text = "Ingreso de datos";
@@ -88,28 +88,28 @@ namespace TrabajoPractico1
             this.tableLayoutPanel3.Controls.Add(this.tbApellido, 0, 4);
             this.tableLayoutPanel3.Controls.Add(this.btnAgregar, 0, 5);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 19);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 24);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 7;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 66.66666F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(226, 278);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(256, 348);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // lbNombre
             // 
             this.lbNombre.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbNombre.AutoSize = true;
-            this.lbNombre.Location = new System.Drawing.Point(4, 34);
+            this.lbNombre.Location = new System.Drawing.Point(4, 44);
             this.lbNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNombre.Name = "lbNombre";
-            this.lbNombre.Size = new System.Drawing.Size(58, 17);
+            this.lbNombre.Size = new System.Drawing.Size(65, 20);
             this.lbNombre.TabIndex = 0;
             this.lbNombre.Text = "Nombre";
             // 
@@ -117,38 +117,38 @@ namespace TrabajoPractico1
             // 
             this.lbApellido.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbApellido.AutoSize = true;
-            this.lbApellido.Location = new System.Drawing.Point(4, 108);
+            this.lbApellido.Location = new System.Drawing.Point(4, 137);
             this.lbApellido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbApellido.Name = "lbApellido";
-            this.lbApellido.Size = new System.Drawing.Size(58, 17);
+            this.lbApellido.Size = new System.Drawing.Size(65, 20);
             this.lbApellido.TabIndex = 1;
             this.lbApellido.Text = "Apellido";
             // 
             // tbNombre
             // 
             this.tbNombre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbNombre.Location = new System.Drawing.Point(4, 62);
-            this.tbNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.tbNombre.Location = new System.Drawing.Point(4, 78);
+            this.tbNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbNombre.Name = "tbNombre";
-            this.tbNombre.Size = new System.Drawing.Size(218, 22);
+            this.tbNombre.Size = new System.Drawing.Size(248, 26);
             this.tbNombre.TabIndex = 2;
             // 
             // tbApellido
             // 
             this.tbApellido.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbApellido.Location = new System.Drawing.Point(4, 136);
-            this.tbApellido.Margin = new System.Windows.Forms.Padding(4);
+            this.tbApellido.Location = new System.Drawing.Point(4, 171);
+            this.tbApellido.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbApellido.Name = "tbApellido";
-            this.tbApellido.Size = new System.Drawing.Size(218, 22);
+            this.tbApellido.Size = new System.Drawing.Size(248, 26);
             this.tbApellido.TabIndex = 3;
             // 
             // btnAgregar
             // 
             this.btnAgregar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAgregar.Location = new System.Drawing.Point(63, 184);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAgregar.Location = new System.Drawing.Point(72, 231);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(100, 28);
+            this.btnAgregar.Size = new System.Drawing.Size(112, 35);
             this.btnAgregar.TabIndex = 4;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -158,11 +158,11 @@ namespace TrabajoPractico1
             // 
             this.gbElementos.Controls.Add(this.tableLayoutPanel2);
             this.gbElementos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbElementos.Location = new System.Drawing.Point(267, 10);
-            this.gbElementos.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
+            this.gbElementos.Location = new System.Drawing.Point(300, 12);
+            this.gbElementos.Margin = new System.Windows.Forms.Padding(12);
             this.gbElementos.Name = "gbElementos";
-            this.gbElementos.Padding = new System.Windows.Forms.Padding(4);
-            this.gbElementos.Size = new System.Drawing.Size(234, 301);
+            this.gbElementos.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbElementos.Size = new System.Drawing.Size(264, 377);
             this.gbElementos.TabIndex = 1;
             this.gbElementos.TabStop = false;
             this.gbElementos.Text = "Elementos";
@@ -174,22 +174,22 @@ namespace TrabajoPractico1
             this.tableLayoutPanel2.Controls.Add(this.btnBorrar, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lbNombres, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 19);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 24);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(226, 278);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(256, 348);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // btnBorrar
             // 
             this.btnBorrar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnBorrar.Location = new System.Drawing.Point(63, 242);
-            this.btnBorrar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBorrar.Location = new System.Drawing.Point(72, 303);
+            this.btnBorrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(100, 28);
+            this.btnBorrar.Size = new System.Drawing.Size(112, 35);
             this.btnBorrar.TabIndex = 0;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = true;
@@ -199,24 +199,24 @@ namespace TrabajoPractico1
             // 
             this.lbNombres.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbNombres.FormattingEnabled = true;
-            this.lbNombres.ItemHeight = 16;
-            this.lbNombres.Location = new System.Drawing.Point(4, 4);
-            this.lbNombres.Margin = new System.Windows.Forms.Padding(4);
+            this.lbNombres.ItemHeight = 20;
+            this.lbNombres.Location = new System.Drawing.Point(4, 5);
+            this.lbNombres.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lbNombres.Name = "lbNombres";
-            this.lbNombres.Size = new System.Drawing.Size(218, 226);
+            this.lbNombres.Size = new System.Drawing.Size(248, 283);
             this.lbNombres.Sorted = true;
             this.lbNombres.TabIndex = 1;
             this.lbNombres.SelectedIndexChanged += new System.EventHandler(this.lbNombres_SelectedIndexChanged);
             // 
             // Ejercicio2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(512, 321);
+            this.ClientSize = new System.Drawing.Size(576, 401);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MinimumSize = new System.Drawing.Size(526, 356);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MinimumSize = new System.Drawing.Size(589, 431);
             this.Name = "Ejercicio2";
             this.Text = "Segundo Ejercicio · TP Nº 1 PROG III";
             this.tableLayoutPanel1.ResumeLayout(false);

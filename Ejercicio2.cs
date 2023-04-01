@@ -87,7 +87,7 @@ namespace TrabajoPractico1
             }
             else
             {
-                MessageBox.Show("Debe seleccionar un nombre");
+                MessageBox.Show("Debe seleccionar un nombre.");
             }
         }
     }

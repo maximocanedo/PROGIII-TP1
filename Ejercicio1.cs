@@ -51,12 +51,12 @@ namespace TrabajoPractico1
             {
                 if (seRepite == false)
                 {
-                    MessageBox.Show("Debe ingresar un nombre");
+                    MessageBox.Show("Debe ingresar un nombre.");
                     
                 }
                 else
                 {
-                    MessageBox.Show("Nombre repetido", "error");
+                    MessageBox.Show("Nombre repetido.", "Error");
                     
                 }
                 tbNombre.Text = "";
@@ -71,7 +71,7 @@ namespace TrabajoPractico1
             }
             else
             {
-                MessageBox.Show("No hay ningun nombre seleccionado");
+                MessageBox.Show("No hay ningun nombre seleccionado.");
             }
         }
 
@@ -91,7 +91,7 @@ namespace TrabajoPractico1
             }
             else
             {
-                MessageBox.Show("La lista izquierda se encuentra vacia");
+                MessageBox.Show("La lista izquierda se encuentra vacía.");
             }
         }
 
