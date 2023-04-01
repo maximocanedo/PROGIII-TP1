@@ -76,8 +76,6 @@ namespace TrabajoPractico1
             {
                 listBox1.Items.Add(nombreDadoPorElUsuario);
             }
-
-
         }
 
         private void btnMover_Click(object sender, EventArgs e)
