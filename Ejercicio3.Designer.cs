@@ -4,7 +4,7 @@ namespace TrabajoPractico1
     partial class Ejercicio3
     {
         /// <summary>
-        /// Required designer variable.
+        /// Required designer variable. 
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
@@ -33,11 +33,11 @@ namespace TrabajoPractico1
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rbFemaleSex = new System.Windows.Forms.RadioButton();
             this.rbMaleSex = new System.Windows.Forms.RadioButton();
-            this.rbMarried = new System.Windows.Forms.RadioButton();
+            this.rbFemaleSex = new System.Windows.Forms.RadioButton();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rbSingle = new System.Windows.Forms.RadioButton();
+            this.rbMarried = new System.Windows.Forms.RadioButton();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.btnMostrarSeleccion = new System.Windows.Forms.Button();
             this.tbResultado = new System.Windows.Forms.TextBox();
@@ -93,17 +93,17 @@ namespace TrabajoPractico1
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sexo";
             // 
-            // groupBox2
+            // rbMaleSex
             // 
-            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox2.Controls.Add(this.rbSingle);
-            this.groupBox2.Controls.Add(this.rbMarried);
-            this.groupBox2.Location = new System.Drawing.Point(162, 14);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(153, 100);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Estado Civil";
+            this.rbMaleSex.AutoSize = true;
+            this.rbMaleSex.Location = new System.Drawing.Point(34, 53);
+            this.rbMaleSex.Name = "rbMaleSex";
+            this.rbMaleSex.Size = new System.Drawing.Size(73, 17);
+            this.rbMaleSex.TabIndex = 1;
+            this.rbMaleSex.TabStop = true;
+            this.rbMaleSex.Text = "Masculino";
+            this.rbMaleSex.UseVisualStyleBackColor = true;
+            this.rbMaleSex.CheckedChanged += new System.EventHandler(this.rbMaleSex_CheckedChanged);
             // 
             // rbFemaleSex
             // 
@@ -117,29 +117,17 @@ namespace TrabajoPractico1
             this.rbFemaleSex.UseVisualStyleBackColor = true;
             this.rbFemaleSex.CheckedChanged += new System.EventHandler(this.rbFemaleSex_CheckedChanged);
             // 
-            // rbMaleSex
+            // groupBox2
             // 
-            this.rbMaleSex.AutoSize = true;
-            this.rbMaleSex.Location = new System.Drawing.Point(34, 53);
-            this.rbMaleSex.Name = "rbMaleSex";
-            this.rbMaleSex.Size = new System.Drawing.Size(73, 17);
-            this.rbMaleSex.TabIndex = 1;
-            this.rbMaleSex.TabStop = true;
-            this.rbMaleSex.Text = "Masculino";
-            this.rbMaleSex.UseVisualStyleBackColor = true;
-            this.rbMaleSex.CheckedChanged += new System.EventHandler(this.rbMaleSex_CheckedChanged);
-            // 
-            // rbMarried
-            // 
-            this.rbMarried.AutoSize = true;
-            this.rbMarried.Location = new System.Drawing.Point(31, 29);
-            this.rbMarried.Name = "rbMarried";
-            this.rbMarried.Size = new System.Drawing.Size(72, 17);
-            this.rbMarried.TabIndex = 0;
-            this.rbMarried.TabStop = true;
-            this.rbMarried.Text = "Casado/a";
-            this.rbMarried.UseVisualStyleBackColor = true;
-            this.rbMarried.CheckedChanged += new System.EventHandler(this.rbMarried_CheckedChanged);
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox2.Controls.Add(this.rbSingle);
+            this.groupBox2.Controls.Add(this.rbMarried);
+            this.groupBox2.Location = new System.Drawing.Point(162, 14);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(153, 100);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Estado Civil";
             // 
             // rbSingle
             // 
@@ -152,6 +140,18 @@ namespace TrabajoPractico1
             this.rbSingle.Text = "Soltero/a";
             this.rbSingle.UseVisualStyleBackColor = true;
             this.rbSingle.CheckedChanged += new System.EventHandler(this.rbSingle_CheckedChanged);
+            // 
+            // rbMarried
+            // 
+            this.rbMarried.AutoSize = true;
+            this.rbMarried.Location = new System.Drawing.Point(31, 29);
+            this.rbMarried.Name = "rbMarried";
+            this.rbMarried.Size = new System.Drawing.Size(72, 17);
+            this.rbMarried.TabIndex = 0;
+            this.rbMarried.TabStop = true;
+            this.rbMarried.Text = "Casado/a";
+            this.rbMarried.UseVisualStyleBackColor = true;
+            this.rbMarried.CheckedChanged += new System.EventHandler(this.rbMarried_CheckedChanged);
             // 
             // checkedListBox1
             // 
@@ -171,7 +171,7 @@ namespace TrabajoPractico1
             // btnMostrarSeleccion
             // 
             this.btnMostrarSeleccion.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnMostrarSeleccion.Location = new System.Drawing.Point(113, 234);
+            this.btnMostrarSeleccion.Location = new System.Drawing.Point(113, 223);
             this.btnMostrarSeleccion.Name = "btnMostrarSeleccion";
             this.btnMostrarSeleccion.Size = new System.Drawing.Size(98, 23);
             this.btnMostrarSeleccion.TabIndex = 2;
@@ -182,7 +182,7 @@ namespace TrabajoPractico1
             // tbResultado
             // 
             this.tbResultado.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tbResultado.Location = new System.Drawing.Point(49, 270);
+            this.tbResultado.Location = new System.Drawing.Point(49, 265);
             this.tbResultado.Multiline = true;
             this.tbResultado.Name = "tbResultado";
             this.tbResultado.Size = new System.Drawing.Size(225, 150);

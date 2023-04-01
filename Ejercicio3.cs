@@ -25,7 +25,7 @@ namespace TrabajoPractico1
             sexo = 1;
             rbMarried.Text = "Casada";
             rbSingle.Text = "Soltera";
-        }
+        } 
 
         private void rbMaleSex_CheckedChanged(object sender, EventArgs e)
         {
