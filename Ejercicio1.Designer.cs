@@ -71,7 +71,6 @@ namespace TrabajoPractico1
             this.lbNombres2.Name = "lbNombres2";
             this.lbNombres2.Size = new System.Drawing.Size(135, 212);
             this.lbNombres2.TabIndex = 11;
-            this.lbNombres2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
             // lbNombres1
             // 

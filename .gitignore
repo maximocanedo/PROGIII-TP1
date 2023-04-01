@@ -5,3 +5,7 @@ obj/
 *.suo
 *.prefs
 packages/
+.vs/
+/.vs/
+/.vs/*
+.vs/*

@@ -43,7 +43,8 @@ namespace TrabajoPractico1 {
             }
             if (NombreEstaRepetido(tbNombre.Text.Trim())) {
                 MessageBox.Show("Nombre repetido.", "Error");
-            } else {
+            }
+            else {
                 lbNombres1.Items.Add(tbNombre.Text.Trim());
                 tbNombre.Text = "";
             }
@@ -59,6 +60,7 @@ namespace TrabajoPractico1 {
             }
         }
 
+        // Esta función mueve todos los elementos de @lbNombres1 a @lbNombres2.
         private void button3_Click_1(object sender, EventArgs e) {
             if (lbNombres1.Items.Count != 0) {
                 foreach (string item in lbNombres1.Items) {
@@ -69,12 +71,6 @@ namespace TrabajoPractico1 {
             else {
                 MessageBox.Show("La lista izquierda se encuentra vacía.");
             }
-        }
-
-        private void listBox2_SelectedIndexChanged(object sender, EventArgs e) {
-
-
-
         }
     }
 }
