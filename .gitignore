@@ -9,3 +9,8 @@ packages/
 /.vs/
 /.vs/*
 .vs/*
+.vs/
+/.vs/
+*.suo
+.vs
+/.vs
