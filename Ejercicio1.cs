@@ -27,7 +27,7 @@ namespace TrabajoPractico1 {
             return paso4;
         }
         /// <summary>
-        /// Busca en @lbNombres1 y @lbNombres2 si hay algún ítem repetido.
+        /// Busca en @lbNombres1 y @lbNombres2 si hay algún ítem repetido. 
         /// </summary>
         /// <param name="nombre">El string dado, del cual se quiere saber si está repetido en las listas.</param>
         /// <returns>True, si hay un ítem ídentico al string dado. False, si no lo hay.</returns>
