@@ -50,7 +50,7 @@ namespace TrabajoPractico1
             tbListaOficios.Text = "";
             foreach (string aux in clbOficios.CheckedItems)
             {
-                tbListaOficios.SelectedText=aux +  "\r\n";
+                tbListaOficios.SelectedText = "- " + aux +  "\r\n";
             }
         }
     }

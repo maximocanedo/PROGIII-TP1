@@ -54,10 +54,6 @@ namespace TrabajoPractico1 {
             tbApellido.Text = "";
         } // Optimizado
 
-        private void lbNombres_SelectedIndexChanged(object sender, EventArgs e) {
-
-        }
-
         private void btnBorrar_Click(object sender, EventArgs e) {
             if (lbNombres.SelectedItems.Count != 0) {
                 lbNombres.Items.Remove(lbNombres.SelectedItem);
@@ -66,9 +62,5 @@ namespace TrabajoPractico1 {
                 MessageBox.Show("Debe seleccionar un nombre.");
             }
         } // Optimizado
-
-        private void tbNombre_TextChanged(object sender, EventArgs e) {
-
-        }
     }
 }

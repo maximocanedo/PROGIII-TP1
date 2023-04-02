@@ -72,10 +72,5 @@ namespace TrabajoPractico1 {
                 MessageBox.Show("La lista izquierda se encuentra vacía.");
             }
         }
-
-        private void lbNombres2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
