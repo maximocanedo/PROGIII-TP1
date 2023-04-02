@@ -35,7 +35,7 @@ namespace TrabajoPractico1 {
         /// Examina el nombre dado por el usuario y si no está en blanco, no está repetido en ninguna de las listas, lo agrega a la @lbNombres1
         /// </summary>
         private void AgregarItem() {
-            string nombreSinEspacios = Funciones.EliminarEspacios(tbNombre.Text.Trim());
+            string nombreSinEspacios = tbNombre.Text.Trim();
             if (nombreSinEspacios == "") {
                 MessageBox.Show("Debe ingresar un nombre");
                 return;
