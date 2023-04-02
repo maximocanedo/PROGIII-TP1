@@ -11,35 +11,21 @@ namespace TrabajoPractico1 {
         public Ejercicio1() {
             InitializeComponent();
         }
-        /// <summary>
-        /// Normaliza un string, con el fin de que sea posible poder compararlo con otros.  
-        /// </summary>
-        /// <param name="str">El string que se desea normalizar</param>
-        /// <returns>Un string sin acentos, en mayúsculas, ni espacios en blanco.</returns>
-        private string normalizarString(string str) {
-            string paso1 = new string(str
-                .Normalize(NormalizationForm.FormD)
-                .Where(c => char.GetUnicodeCategory(c) != System.Globalization.UnicodeCategory.NonSpacingMark)
-                .ToArray()); // Quita acentos.
-            string paso2 = paso1.ToUpper(); // Pasar todo a mayúsculas
-            string paso3 = paso2.Trim(); // Cortar espacios
-            string paso4 = paso3.Replace(" ", ""); // Cortar espacios, definitivamente
-            return paso4;
-        }
+        
         /// <summary>
         /// Busca en @lbNombres1 y @lbNombres2 si hay algún ítem repetido. 
         /// </summary>
         /// <param name="nombre">El string dado, del cual se quiere saber si está repetido en las listas.</param>
         /// <returns>True, si hay un ítem ídentico al string dado. False, si no lo hay.</returns>
         private bool NombreEstaRepetido(string nombre) {
-            string nombreNormalizado = normalizarString(nombre);
+            string nombreNormalizado = Funciones.NormalizarString(nombre);
             foreach (string nombreList1 in this.lbNombres1.Items) {
-                if (normalizarString(nombreList1) == nombreNormalizado) {
+                if (Funciones.NormalizarString(nombreList1) == nombreNormalizado) {
                     return true;
                 }
             }
             foreach (string nombreList2 in this.lbNombres2.Items) {
-                if (normalizarString(nombreList2) == nombreNormalizado) {
+                if (Funciones.NormalizarString(nombreList2) == nombreNormalizado) {
                     return true;
                 }
             }
@@ -49,7 +35,7 @@ namespace TrabajoPractico1 {
         /// Examina el nombre dado por el usuario y si no está en blanco, no está repetido en ninguna de las listas, lo agrega a la @lbNombres1
         /// </summary>
         private void AgregarItem() {
-            string nombreSinEspacios = tbNombre.Text.Trim();
+            string nombreSinEspacios = Funciones.EliminarEspacios(tbNombre.Text.Trim());
             if (nombreSinEspacios == "") {
                 MessageBox.Show("Debe ingresar un nombre");
                 return;
