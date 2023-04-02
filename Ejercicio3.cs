@@ -19,6 +19,7 @@ namespace TrabajoPractico1
 
         private void btnMostrar_Click(object sender, EventArgs e)
         {
+            
             lblMuestra.Text = "";
             lblMuestra.Text = "Usted seleccionó los siguientes elementos:";
             if (rbFemenino.Checked)
@@ -43,20 +44,14 @@ namespace TrabajoPractico1
                 lblEstadoCivil.Text = "Estado Civil: Soltero";
             }
 
-            // REVISAR ESTO
-            // Para mí hay que contar la cantidad de ítems, y a partir de eso verificar 
-            // los items que tienen check. 
-            // Y luego escribir para que figuren por pantalla.
             lblOficio.Text = "";
             lblOficio.Text = "Oficio:";
-            /*for (int I = 1; I <= clbOficios.Items.Count; I++)
+
+            tbListaOficios.Text = "";
+            foreach (string aux in clbOficios.CheckedItems)
             {
-                if (clbOficios.GetItemChecked(I))
-                {
-                    // no sé cómo hacer para mostrar por pantalla el nombre o el texto del item seleccionado.
-                }
-            }*/
-            // HASTA ACÁ.
+                tbListaOficios.SelectedText=aux +  "\r\n";
+            }
         }
     }
 }
