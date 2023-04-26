@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PrimerEjercicio">
-
+    tools:context=".SegundoEjercicio">
     <TextView
-        android:id="@+id/primerEjercicioTitulo"
+        android:id="@+id/segundoEjercicioTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Primer Ejercicio"
+        android:text="Segundo Ejercicio"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
