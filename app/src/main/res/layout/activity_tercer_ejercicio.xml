@@ -2,17 +2,150 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clroot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TercerEjercicio">
+
     <TextView
         android:id="@+id/tercerEjercicioTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tercer Ejercicio"
+        android:layout_marginTop="48dp"
+        android:text="Tercer ejercicio"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/ej3radioGroupSexo"
+        android:layout_width="181dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:paddingHorizontal="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/ej3radioHombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Hombre" />
+
+        <RadioButton
+            android:id="@+id/ej3radioMujer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mujer" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Seleccione sexo y estado civil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tercerEjercicioTitulo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Seleccione oficio u oficios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ej3radioGroupSexo" />
+
+    <RadioGroup
+        android:id="@+id/ej3radioGroupEstadoCivil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:paddingHorizontal="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ej3radioGroupSexo"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/ej3radioSoltero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Soltero" />
+
+        <RadioButton
+            android:id="@+id/ej3radioCasado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Casado" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <CheckBox
+            android:id="@+id/ej3cbDataEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data Entry" />
+
+        <CheckBox
+            android:id="@+id/ej3cbOperadorPC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Operador de PC" />
+
+        <CheckBox
+            android:id="@+id/ej3cbProgramador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Programador" />
+
+        <CheckBox
+            android:id="@+id/ej3cbReparadorPC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reparador de PC" />
+
+        <CheckBox
+            android:id="@+id/ej3cbTester"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tester" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnMostrarSeleccionado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Mostrar lo seleccionado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/ej3txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMostrarSeleccionado" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
