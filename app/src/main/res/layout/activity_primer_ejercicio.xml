@@ -6,14 +6,76 @@
     android:layout_height="match_parent"
     tools:context=".PrimerEjercicio">
 
+    <ListView
+        android:id="@+id/ej1listView0"
+        android:layout_width="400dp"
+        android:layout_height="220dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/primerEjercicioTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="Primer Ejercicio"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ej1txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Ingrese un nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/primerEjercicioTitulo" />
+
+    <Button
+        android:id="@+id/ej1btnAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Agregar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ej1txtNombre" />
+
+    <ListView
+        android:id="@+id/ej1listView1"
+        android:layout_width="400dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ej1btnAgregar" />
+
+    <Button
+        android:id="@+id/ej1btnMover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="Mover"
+        app:layout_constraintBottom_toTopOf="@+id/ej1listView0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ej1listView1" />
+
+    <Button
+        android:id="@+id/ej1btnMoverTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="Mover todo"
+        app:layout_constraintBottom_toTopOf="@+id/ej1listView0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ej1listView1" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
